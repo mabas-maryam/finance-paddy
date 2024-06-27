@@ -1,8 +1,9 @@
+import LandingPage from "./LandingPage"
 
 function App() {
   return (
     <>
-      <p className="text-2xl">Welcome to finance-paddy</p>
+      <LandingPage />
     </>
   )
 }
