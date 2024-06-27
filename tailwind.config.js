@@ -7,11 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#89EFD7'
+        primary: '#82B74B',
+        appGrey: '#374151'
       },
 
       fontFamily: {
-        
+        primaryFont: ["Raleway", "sans-serif"]
       }
     },
   },
