@@ -12,7 +12,9 @@ export default {
       },
 
       fontFamily: {
-        primaryFont: ["Raleway", "sans-serif"]
+        primaryFont: ["Raleway", "sans-serif"],
+        secondaryFont: ["Roboto", "sans-serif"],
+        tertiaryFont: ["Montserrat", "sans-serif"]
       }
     },
   },
