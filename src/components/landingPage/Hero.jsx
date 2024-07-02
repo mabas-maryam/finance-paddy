@@ -11,7 +11,7 @@ const Hero = () => {
           <span className="text-secondary ">Finance-Paddy</span>
         </div>
 
-        <div className="md:text-xl mt-7 w-[89%] text-appGrey font-tertiaryFont">
+        <div className="md:text-xl mt-7 md:w-[89%] text-appGrey font-tertiaryFont">
           Allocate your income to{" "}
           <span className="text-primary">
             investments, savings, and expenses.
@@ -40,8 +40,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="md:grow flex justify-center">
-        <img src="https://frugal-finesse.vercel.app/static/media/landing.0b2a130527113b8a09e1e303de91cdfc.svg" className="h-20 md:h-[38rem] " alt="" />
+      <div className="md:grow flex justify-center mt-6 md:mt-0">
+        <img src="https://frugal-finesse.vercel.app/static/media/landing.0b2a130527113b8a09e1e303de91cdfc.svg" className="md:h-[38rem] w-full" alt="" />
       
       </div>
     </div>
