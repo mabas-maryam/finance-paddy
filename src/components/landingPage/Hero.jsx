@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="container mx-auto  px-10 flex items-center justify-center font-tertiaryFont">
       <div className="w-[65%] ">
-        <div className="text-5xl font-bold font-tertiaryFont">
+        <div className="text-5xl font-bold font-tertiaryFont leading-[3.5rem]">
           {" "}
           Money & Sense: <br />
           Master your wealth with <br />{" "}

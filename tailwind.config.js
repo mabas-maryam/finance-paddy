@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         primary: '#82B74B',
-        appGrey: '#374151'
+        appGrey: '#374151',
+        hoverColor: '#68923C'
       },
 
       fontFamily: {
