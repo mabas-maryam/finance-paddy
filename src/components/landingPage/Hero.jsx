@@ -8,7 +8,7 @@ const Hero = () => {
           {" "}
           Money & Sense: <br />
           Master your wealth with <br />{" "}
-          <span className="text-primary ">Finance-Paddy</span>
+          <span className="text-secondary ">Finance-Paddy</span>
         </div>
 
         <div className="text-xl mt-7 w-[89%] text-appGrey font-tertiaryFont">
