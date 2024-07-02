@@ -33,6 +33,7 @@ const SignUp = () => {
                     type="text"
                     placeholder="Name"
                     className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:outline-secondary"
+                    required
                   />
                   <span className="absolute right-4 top-8 text-purple-6"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><g opacity="0.5" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linejoin="round" d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"></path><circle cx="12" cy="7" r="3"></circle></g></svg></span>
                 </div>
@@ -41,7 +42,7 @@ const SignUp = () => {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey"
+                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey"required
                   />
                   <span class="absolute right-4 top-10 text-gray-500">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -55,7 +56,7 @@ const SignUp = () => {
                   <input
                     type={passwordHidden ? 'password' : 'text'}
                     placeholder="Enter your password"
-                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey"
+                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey" required
                   />
 
                   <span className="absolute text-gray-500 right-4 top-10" onClick={() => setPasswordHidden(!passwordHidden)}>
@@ -82,7 +83,7 @@ const SignUp = () => {
                   <input
                     type={confirmPasswordHidden ? 'password' : 'text'}
                     placeholder="Enter your password"
-                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey"
+                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey" required
                   />
 
 <span className="absolute text-gray-500 right-4 top-10" onClick={() => setConfirmedPassword(!confirmPasswordHidden)}>
@@ -123,7 +124,7 @@ const SignUp = () => {
               <p className="mt-4 text-center">
                 Already have an account?{' '}
                 <a href="/login" className="text-blue-500 hover:underline">
-                  Login
+                  Sign In
                 </a>
               </p>
             </div>
