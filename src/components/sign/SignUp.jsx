@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const SignUp = () => {
+ 
   const [passwordHidden, setPasswordHidden] = useState(true)
   const [confirmPassword, setConfirmPasword] = useState(true)
 
@@ -33,6 +34,7 @@ const SignUp = () => {
                     type="text"
                     placeholder="Name"
                     className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:outline-secondary"
+                    required
                   />
                   <span className="absolute right-4 top-8 text-purple-6"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><g opacity="0.5" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linejoin="round" d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"></path><circle cx="12" cy="7" r="3"></circle></g></svg></span>
                 </div>
@@ -41,9 +43,9 @@ const SignUp = () => {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey"
+                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey"required
                   />
-                  <span class="absolute right-9 top-10 text-purple-6">
+                  <span class="absolute right-4 top-10 text-gray-500">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>
@@ -55,7 +57,7 @@ const SignUp = () => {
                   <input
                     type={passwordHidden ? 'password' : 'text'}
                     placeholder="Enter your password"
-                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey"
+                    className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-appGrey" required
                   />
 
                   <span className="absolute text-gray-500 right-4 top-10" onClick={() => setPasswordHidden(!passwordHidden)}>
@@ -73,10 +75,6 @@ const SignUp = () => {
 
                       )
                     }
-
-
-
-
                   </span>
 
 
@@ -110,7 +108,6 @@ const SignUp = () => {
 
 </span>
 
-
                 </div>
                 <button
                   type="submit"
@@ -128,7 +125,7 @@ const SignUp = () => {
               <p className="mt-4 text-center">
                 Already have an account?{' '}
                 <a href="/login" className="text-blue-500 hover:underline">
-                  Login
+                  Sign In
                 </a>
               </p>
             </div>
