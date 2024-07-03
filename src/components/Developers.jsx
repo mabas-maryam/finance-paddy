@@ -15,8 +15,8 @@ const SignUp = () => {
           >
             Finance <span className="text-primary">Paddy</span>
           </Link>
-          <p className="text-primary font-tertiaryFont text-center mt-3">
-          Feedback, Reccommendation, Queries... We'd love to hear from you!
+          <p className="text-primary font-tertiaryFont text-center my-6">
+          Feedback, Reccommendation, Queries... <span className="md:flex justify-center ">We'd love to hear from you!</span>
           </p>
           <img
             src="https://frugal-finesse.vercel.app/static/media/contact-us.fa1c38674e1f9116a3bd.png"
@@ -157,7 +157,7 @@ const SignUp = () => {
                   <textarea
                     type="textarea"
                     placeholder="Type your Message"
-                    className="w-full px-4 pt-2 pb-16 border rounded-lg focus:outline-none focus:outline-secondary"
+                    className="w-full px-4 pt-2 pb-24 border rounded-lg focus:outline-none focus:outline-secondary"
                     required
                   />
                   
