@@ -3,7 +3,7 @@ import React from "react";
 const Form2 = () => {
   return (
     <div className="relative flex flex-col space-y-3">
-      <label className="font-semibold text-appGrey text-xl ">
+      <label className="font-semibold text-appGrey md:text-xl ">
         Total Monthly Income?{" "}
       </label>
       <input

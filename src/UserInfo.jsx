@@ -14,8 +14,8 @@ const UserInfo = () => {
   }
   return (
     <div className="container mx-auto h-screen px-4 md:px-10 flex flex-col justify-center items-center">
-      <div className="w-[40%] text-center">
-        <Link to="/" className="font-primaryFont text-4xl font-bold ">
+      <div className="w-full md:w-[40%] text-center">
+        <Link to="/" className="font-primaryFont text-2xl md:text-4xl font-bold ">
           Finance <span className="text-primary">Paddy</span>
         </Link>
 
