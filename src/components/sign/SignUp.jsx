@@ -5,6 +5,10 @@ const SignUp = () => {
   const [passwordHidden, setPasswordHidden] = useState(true);
   const [confirmPassword, setConfirmPassword] = useState(true);
 
+  const handleSubmit = () => {
+    
+  }
+
   return (
     <div className="container mx-auto px-4 md:px-10">
       <div className="flex flex-col md:flex-row px-4 md:px-10 shadow-md">
@@ -38,7 +42,7 @@ const SignUp = () => {
             <div className="bg-white rounded w-full">
               <form className="space-y-4 w-full">
                 <div className="relative">
-                  <label className="text-gray-700">Full Name</label>
+                  <label className="text-gray-700">Full Name <span className="text-red-400">*</span></label>
                   <input
                     type="text"
                     placeholder="Name"
@@ -68,7 +72,7 @@ const SignUp = () => {
                   </span>
                 </div>
                 <div className="relative">
-                  <label className="text-gray-700">Email</label>
+                  <label className="text-gray-700">Email<span className="text-red-400">*</span></label>
                   <input
                     type="email"
                     placeholder="Enter your email"
@@ -93,7 +97,7 @@ const SignUp = () => {
                   </span>
                 </div>
                 <div className="relative">
-                  <label className="text-gray-700">Password</label>
+                  <label className="text-gray-700">Password<span className="text-red-400">*</span></label>
                   <input
                     type={passwordHidden ? "password" : "text"}
                     placeholder="Enter your password"
@@ -143,7 +147,7 @@ const SignUp = () => {
                   </span>
                 </div>
                 <div className="relative">
-                  <label className="text-gray-700">Confirm Password</label>
+                  <label className="text-gray-700">Confirm Password<span className="text-red-400">*</span></label>
                   <input
                     type={confirmPassword ? "password" : "text"}
                     placeholder="Re-enter your password"
@@ -192,6 +196,7 @@ const SignUp = () => {
                     )}
                   </span>
                 </div>
+                
                 <button
                   type="submit"
                   className="w-full py-3 bg-primary text-white rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -201,6 +206,7 @@ const SignUp = () => {
                 <button
                   type="button"
                   className="w-full py-3 mt-2 text-appGrey rounded-lg hover:bg-secondary hover:bg-opacity-35 border border-primary"
+                  onClick={handleSubmit}
                 >
                   Sign In with Google
                 </button>

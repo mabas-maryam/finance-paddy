@@ -38,7 +38,7 @@ const SignUp = () => {
               <form className="space-y-4 w-full">
                 <div className="md:flex gap-3">
                 <div className="relative">
-                  <label className="text-gray-700">First Name</label>
+                  <label className="text-gray-700">First Name <span className="text-red-400">*</span></label>
                   <input
                     type="text"
                     placeholder="Enter your first Name"
@@ -69,7 +69,7 @@ const SignUp = () => {
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-700">Last Name</label>
+                  <label className="text-gray-700">Last Name <span className="text-red-400">*</span></label>
                   <input
                     type="text"
                     placeholder="Enter your last Name"
@@ -101,7 +101,7 @@ const SignUp = () => {
 
                 </div>
                 <div className="relative">
-                  <label className="text-gray-700">Email</label>
+                  <label className="text-gray-700">Email <span className="text-red-400">*</span></label>
                   <input
                     type="email"
                     placeholder="Enter your email"
@@ -127,7 +127,7 @@ const SignUp = () => {
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-700">Subject</label>
+                  <label className="text-gray-700">Subject <span className="text-red-400">*</span></label>
                   <input
                     type="text"
                     placeholder="Message Subject"
@@ -153,7 +153,7 @@ const SignUp = () => {
                 </div>
 
                 <div className="relative">
-                  <label className="text-gray-700">Message</label>
+                  <label className="text-gray-700">Message <span className="text-red-400">*</span></label>
                   <textarea
                     type="textarea"
                     placeholder="Type your Message"
