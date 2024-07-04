@@ -3,10 +3,10 @@ import {Routes, Route} from 'react-router-dom'
 
 import LandingPage from "./LandingPage"
 import Hero from "./components/landingPage/Hero"
-import SignIn from "./components/sign/SignIn"
-import SignUp from "./components/sign/SignUp"
+import SignIn from "./SignIn"
+import SignUp from "./SignUp"
 import Developers from "./components/Developers"
-import UserInfo from "./components/sign/UserInfo"
+import UserInfo from "./UserInfo"
 
 function App() {
   return (
