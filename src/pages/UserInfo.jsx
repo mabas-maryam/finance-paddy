@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Form1 from "./components/userInfo/Form1";
-import Form2 from "./components/userInfo/Form2";
-import Form3 from "./components/userInfo/Form3";
+import Form1 from "../components/userInfo/Form1";
+import Form2 from "../components/userInfo/Form2";
+import Form3 from "../components/userInfo/Form3";
 
 const UserInfo = () => {
   const [stage, setStage] = useState(1);
