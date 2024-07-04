@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [passwordHidden, setPasswordHidden] = useState(true);
   const [confirmPassword, setConfirmPassword] = useState(true);
 
+  const navigate = useNavigate() 
+
   const handleSubmit = () => {
-    
+    navigate("/userinfo")
   }
 
   return (
@@ -198,15 +200,15 @@ const SignUp = () => {
                 </div>
                 
                 <button
-                  type="submit"
+                  type="button"
                   className="w-full py-3 bg-primary text-white rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  onClick={handleSubmit}
                 >
                   Sign Up
                 </button>
                 <button
                   type="button"
                   className="w-full py-3 mt-2 text-appGrey rounded-lg hover:bg-secondary hover:bg-opacity-35 border border-primary"
-                  onClick={handleSubmit}
                 >
                   Sign In with Google
                 </button>
