@@ -6,6 +6,7 @@ import Hero from "./components/landingPage/Hero"
 import SignIn from "./components/sign/SignIn"
 import SignUp from "./components/sign/SignUp"
 import Developers from "./components/Developers"
+import UserInfo from "./components/sign/UserInfo"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/signin" element={<SignIn />}  />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/developers" element = {<Developers />} />
+        <Route path="/userinfo" element = {<UserInfo/>}/>
       </Routes>
       {/* <LandingPage /> */}
     </>
