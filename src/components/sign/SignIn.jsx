@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Googleicon from "../ui/icons/Google-icon";
 
 const SignUp = () => {
   const [passwordHidden, setPasswordHidden] = useState(true);
@@ -37,7 +38,7 @@ const SignUp = () => {
           <div className="flex items-center mt-6 w-full">
             <div className="bg-white rounded w-full">
               <form className="space-y-4 w-full">
-                
+
                 <div className="relative">
                   <label className="text-gray-700">Email</label>
                   <input
@@ -113,7 +114,7 @@ const SignUp = () => {
                     )}
                   </span>
                 </div>
-                
+
                 <button
                   type="submit"
                   className="w-full py-3 bg-primary text-white rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -122,15 +123,20 @@ const SignUp = () => {
                 </button>
                 <button
                   type="button"
-                  className="w-full py-3 mt-2 text-appGrey rounded-lg hover:bg-secondary hover:bg-opacity-35 border border-primary"
+                  className="relative w-full py-3 mt-2 text-appGrey rounded-lg hover:bg-secondary hover:bg-opacity-35 flex justify-center border border-primary"
                 >
+
+                    <Googleicon />
+                 
+
                   Sign In with Google
                 </button>
+
               </form>
               <p className="mt-4 text-center">
                 Don't have an account?{" "}
                 <a className="text-primary hover:underline">
-                 Sign Up
+                  Sign Up
                 </a>
               </p>
             </div>
