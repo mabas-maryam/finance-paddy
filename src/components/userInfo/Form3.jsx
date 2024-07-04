@@ -3,7 +3,7 @@ import React from "react";
 const Form3 = () => {
   return (
     <div className="relative flex flex-col space-y-3">
-      <label className="font-semibold text-appGrey text-xl ">
+      <label className="font-semibold text-appGrey md:text-xl ">
         Preferred Budget Rule?{" "}
       </label>
       <select
