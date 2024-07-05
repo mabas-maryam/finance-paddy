@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Form1 from "../components/userInfo/Form1";
 import Form2 from "../components/userInfo/Form2";
 import Form3 from "../components/userInfo/Form3";
@@ -12,9 +12,14 @@ const UserInfo = () => {
 
   console.log(stepPercent)
 
+  const navigate = useNavigate();
   const moveToNext = () => {
     if(stage < 3) {
       setStage(stage + 1)
+    }
+    
+    if(stage === 3) {
+      navigate("/dashboard")
     }
     
   }
