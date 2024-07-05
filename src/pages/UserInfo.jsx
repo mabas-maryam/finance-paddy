@@ -4,8 +4,14 @@ import Form1 from "../components/userInfo/Form1";
 import Form2 from "../components/userInfo/Form2";
 import Form3 from "../components/userInfo/Form3";
 
+
 const UserInfo = () => {
   const [stage, setStage] = useState(1);
+
+  const stepPercent = ((stage/3)*100).toFixed()
+
+  console.log(stepPercent)
+
   const moveToNext = () => {
     if(stage < 3) {
       setStage(stage + 1)
@@ -40,7 +46,9 @@ const UserInfo = () => {
           </div>
         </form>
 
-        <div>progressBar</div>
+        <div className=" mt-3 bg-gray-100 w-full rounded-lg">
+          <div className={`bg-primary py-1 rounded-lg`} style={{width: `${stepPercent}%`}}></div>
+        </div>
       </div>
     </div>
   );
