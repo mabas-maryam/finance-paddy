@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -132,7 +132,8 @@ const Dashboard = () => {
               Financial Literacy</li>
             </ul>
 
-            <p className="mt-16">LOGOUT</p>
+            <Link to={'/'}><p className="mt-16">LOGOUT</p></Link>
+
           </div>
         </div>
 
