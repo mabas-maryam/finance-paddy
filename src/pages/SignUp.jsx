@@ -13,7 +13,7 @@ const SignUp = () => {
 
   return (
     <div className="container mx-auto px-4 md:px-10">
-      <div className="flex flex-col md:flex-row px-4 md:px-10 shadow-md">
+      <div className="flex flex-col md:flex-row px-4 md:px-10 md:shadow-md">
         <div className="w-full md:w-1/2 h-full flex items-center flex-col justify-center py-8 md:py-16 border-b md:border-b-0 md:border-r">
           <Link
             to="/"
