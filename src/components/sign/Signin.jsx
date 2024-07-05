@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const SignUp = () => {
   const [passwordHidden, setPasswordHidden] = useState(true);
   const [confirmPassword, setConfirmPassword] = useState(true);
-  const handleSubmit = () => {}
 
   return (
     <div className="container mx-auto px-4 md:px-10">
@@ -41,7 +40,7 @@ const SignUp = () => {
               <form className="space-y-4 w-full">
 
                 <div className="relative">
-                  <label className="text-gray-700">Email <span>*</span></label>
+                  <label className="text-gray-700">Email</label>
                   <input
                     type="email"
                     placeholder="Enter your email"

@@ -13,6 +13,9 @@ export default {
         secondary: '#AC8BEE'
       },
 
+
+
+      
       fontFamily: {
         primaryFont: ["Raleway", "sans-serif"],
         secondaryFont: ["Roboto", "sans-serif"],
