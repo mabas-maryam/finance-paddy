@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = (prop) => {
   const [isNavOpen, setIsNavOpen] = useState(false)
 
   const handleNavOpen = () => {
     setIsNavOpen(!isNavOpen)
   }
+
 
   return (
 
@@ -14,7 +15,12 @@ const Navbar = () => {
       <div className=' flex items-center justify-between font-primaryFont md:px-10'>
 
         <div className='text-xl font-semibold'>
-          <NavLink to={'/'}>Finance <span className='text-primary'>Paddy</span></NavLink>
+          <NavLink to={'/'}> <Link
+            to="/"
+            className="justify-center items-center font-primaryFont text-xl font-semibold"
+          >
+            Finance <span className="text-primary">Paddy</span>
+          </Link></NavLink>
         </div>
 
 
@@ -28,15 +34,15 @@ const Navbar = () => {
         <div className='md:hidden cursor-pointer' onClick={handleNavOpen}>
           {!isNavOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-          ):(
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          ) : (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-</svg>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
 
-          ) }
-          
+          )}
+
 
         </div>
 

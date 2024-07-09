@@ -1,11 +1,10 @@
 import React from "react";
 
-const Form2 = () => {
+const Form2 = (props) => {
   return (
     <div className="relative flex flex-col space-y-3">
       <label className="font-semibold text-appGrey md:text-xl ">
-        Total Monthly Income?{" "}
-      </label>
+        {props.page2}</label>
       <input
         className="border rounded-xl focus:outline-primary py-4 text-center "
         type="number"

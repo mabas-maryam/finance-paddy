@@ -8,6 +8,8 @@ import SignUp from "./pages/SignUp"
 import Developers from "./components/Developers"
 import UserInfo from "./pages/UserInfo"
 import Dashboard from "./pages/dashboard/Dashboard"
+import DashboardLayout from "./components/dashboard/DashboardLayout"
+import Transactions from "./pages/dashboard/Transactions"
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
         <Route path="/developers" element = {<Developers />} />
         <Route path="/userinfo" element = {<UserInfo/>}/>
         <Route path="/dashboard" element = {<Dashboard />}/>
+        <Route path="/transaction" element = {<Transactions />}/>
+
+        <Route path = "/dashboardLayout" element = {<DashboardLayout />} />
       </Routes>
       {/* <LandingPage /> */}
     </>
