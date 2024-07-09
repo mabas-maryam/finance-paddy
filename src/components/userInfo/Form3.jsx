@@ -1,10 +1,10 @@
 import React from "react";
 
-const Form3 = () => {
+const Form3 = (props) => {
   return (
     <div className="relative flex flex-col space-y-3">
       <label className="font-semibold text-appGrey md:text-xl ">
-        Preferred Budget Rule?{" "}
+        {props.paul}
       </label>
       <select
         className="border rounded-xl focus:outline-primary py-4 text-center"

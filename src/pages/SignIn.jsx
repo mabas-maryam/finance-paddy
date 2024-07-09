@@ -66,7 +66,7 @@ const SignUp = () => {
                   </span>
                 </div>
                 <div className="relative">
-                  <label className="text-gray-700">Password</label>
+                  <label className="text-gray-700 py">Password</label>
                   <input
                     type={passwordHidden ? "password" : "text"}
                     placeholder="Enter your password"
@@ -116,12 +116,15 @@ const SignUp = () => {
                   </span>
                 </div>
 
+                <Link to={'/dashboard'}>
                 <button
                   type="submit"
-                  className="w-full py-3 bg-primary text-white rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full py-3 mt-14 bg-primary text-white rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-400"
                 >
                   Sign In
                 </button>
+                </Link>
+
                 <button
                   type="button"
                   className="relative w-full py-3 mt-2 text-appGrey rounded-lg hover:bg-secondary hover:bg-opacity-35 flex justify-center border border-primary"

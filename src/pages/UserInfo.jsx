@@ -20,9 +20,9 @@ const UserInfo = () => {
     
     if(stage === 3) {
       navigate("/dashboard")
-    }
-    
+    } 
   }
+
   return (
     <div className="container mx-auto h-screen px-4 md:px-10 flex flex-col justify-center items-center">
       <div className="w-full md:w-[40%] text-center">
@@ -32,16 +32,16 @@ const UserInfo = () => {
 
         <form action="" className="mt-6 font-tertiaryFont">
           {/* What should we call you form */}
-          {stage === 1 && <Form1 />}
+          {stage === 1 && <Form1 title="How should we call you?" />}
 
           {/* What should we call you form form ends here */}
 
           {/* Monthly income form */}
-          {stage === 2 && <Form2 />}
+          {stage === 2 && <Form2  page2= " Total Monthly Income?"/>}
           {/* Monthly income form ends here */}
 
           {/* BUDGET RULE */}
-          {stage === 3 && <Form3 />}
+          {stage === 3 && <Form3  paul=" Preferred Budget Rule?"/>}
           {/* BUDGET RULE form ends here*/}
 
           <div className="w-full mt-2">
