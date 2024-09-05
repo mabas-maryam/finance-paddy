@@ -8,3 +8,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.contents{
+   
+    width: 100%;
+    height: 100vh;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: 'content2 content3 content4 content5'
+                            'content6 content7 content7 content7'
+                            'content8 content8 content8 content8'
+                            ;
+}
+.content2{
+    grid-area: content2;
+    background-color: blue;
+    box-shadow: black;
+    
+}
+.content3{
+    grid-area: content3;
+    background-color: aqua;
+    box-shadow: black;
+}
+.content4{
+    grid-area: content4;
+    background-color: red;
+    box-shadow: black;
+}
+.content5{
+    grid-area: content5;
+    background-color: royalblue;
+    box-shadow: black;
+}
+.content6{
+    grid-area: content6;
+    background-color: rgb(197, 238, 16);
+    box-shadow: black;
+}
+.content7{
+    grid-area: content7;
+    background-color: rgb(255, 0, 106);
+    box-shadow: black;
+}
+.content8{
+    grid-area: content8;
+    background-color: rgb(9, 219, 72);
+    box-shadow: black;
+}
