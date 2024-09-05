@@ -9,6 +9,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 .contents{
    
     width: 100%;
@@ -58,3 +59,6 @@
     background-color: rgb(9, 219, 72);
     box-shadow: black;
 }
+=======
+
+>>>>>>> a33bd14debc7d977a6e0bbea583dd50ecb63e913
