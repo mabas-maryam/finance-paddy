@@ -215,9 +215,11 @@ const SignUp = () => {
               </form>
               <p className="mt-4 text-center">
                 Already have an account?{" "}
+                <Link to={'/signin'}>
                 <a href="/login" className="text-primary hover:underline">
                   Sign In
                 </a>
+                </Link>
               </p>
             </div>
           </div>
