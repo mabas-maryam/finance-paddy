@@ -16,8 +16,8 @@ const SideBar = () => {
           <div className="text-black pt-20">
             <p className="font-semibold text-lg">Menu</p>
 
-            <ul className=" mt-4 flex flex-col space-y-4 ">
-              <li className="flex items-center gap-2 hover:bg-sideBarHover rounded-md p-1 ">
+            <ul className=" mt-4 flex flex-col space-y-4 cursor-pointer">
+              <li className="flex items-center gap-2 bg-sideBarHover rounded-md p-1 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
