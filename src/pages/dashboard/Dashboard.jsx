@@ -18,15 +18,15 @@ const HeatmapChart = () => {
 
   const [chartData] = useState({
     series: [
-      { name: 'Monday', data: generateData(18, { min: 0, max: 90 }) },
-      { name: 'Tuesday', data: generateData(18, { min: 0, max: 90 }) },
-      { name: 'Wednesday', data: generateData(18, { min: 0, max: 90 }) },
-      { name: 'Thursday', data: generateData(18, { min: 0, max: 90 }) },
-      { name: 'Friday', data: generateData(18, { min: 0, max: 90 }) },
-      { name: 'Saturday', data: generateData(18, { min: 0, max: 90 }) },
-      { name: 'Sunday', data: generateData(18, { min: 0, max: 90 }) },
-      // { name: 'Metric8', data: generateData(18, { min: 0, max: 90 }) },
-      // { name: 'Metric9', data: generateData(18, { min: 0, max: 90 }) },
+      { name: 'Metric1', data: generateData(18, { min: 0, max: 90 }) },
+      { name: 'Metric2', data: generateData(18, { min: 0, max: 90 }) },
+      { name: 'Metric3', data: generateData(18, { min: 0, max: 90 }) },
+      { name: 'Metric4', data: generateData(18, { min: 0, max: 90 }) },
+      { name: 'Metric5', data: generateData(18, { min: 0, max: 90 }) },
+      { name: 'Metric6', data: generateData(18, { min: 0, max: 90 }) },
+      { name: 'Metric7', data: generateData(18, { min: 0, max: 90 }) },
+      { name: 'Metric8', data: generateData(18, { min: 0, max: 90 }) },
+      { name: 'Metric9', data: generateData(18, { min: 0, max: 90 }) },
     ],
     options: {
       chart: {
