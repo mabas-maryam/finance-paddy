@@ -9,7 +9,7 @@ const SideBar = () => {
               to="/"
               className=" text-black font-primaryFont text-2xl font-semibold"
             >
-              Finance <span className="text-secondary">Paddy</span>
+              Finance <span className="text-primary">Paddy</span>
             </Link>
           </header>
 
