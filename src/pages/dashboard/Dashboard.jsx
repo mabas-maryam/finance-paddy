@@ -204,6 +204,7 @@ class AreaChart extends React.Component {
           description: "Savings Budget",
           progress: "$0/",
           total: "$2,000",
+          
         },
       ],
     };
@@ -217,13 +218,14 @@ class AreaChart extends React.Component {
           {this.state.incomeData.map((item, index) => (
             <div
               key={index}
-              className="border px-4 py-4 ml-2 space-y-1 w-1/4 shadow-md shadow-blue-100"
+              className="border px-2 py-5 ml-2 space-y-2 w-1/4 shadow-md shadow-blue-100"
             >
               <h2 className="text-sm">{item.title}</h2>
               <p className="font-semibold text-lg">{item.amount}</p>
               <div className="flex justify-between">
                 <p className="text-primary">{item.percentage}</p>
-                <p className="bg-blue-100 p-1">{item.icon}</p>
+                <p className="bg-blue-300 p-1">{item.icon}</p>
+                
               </div>
             </div>
           ))}
@@ -233,7 +235,7 @@ class AreaChart extends React.Component {
           {/* Empty div - Takes 30% of the 77% space */}
           <div
             id="empty-div"
-            className="w-[32%] ml-2 mt-2 border border-blue-200 h-full shadow-xl shadow-blue-200 px-10 py-4 space-y-4"
+            className="w-[32%] ml-2 mt-2 border border-blue-200 h-full shadow-lg shadow-blue-200 px-10 py-4 space-y-4"
           >
             {/* Map through budgetData */}
             {this.state.budgetData.map((item, index) => (
