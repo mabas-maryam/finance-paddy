@@ -7,7 +7,7 @@ const SideBar = () => {
           <header className=" pt-6">
             <Link
               to="/"
-              className=" text-black font-primaryFont text-3xl font-semibold"
+              className=" text-black font-primaryFont text-2xl font-semibold"
             >
               Finance <span className="text-primary">Paddy</span>
             </Link>
