@@ -7,7 +7,7 @@ const DashboardLayout = ({ children }) => {
     <div className="w-full min-h-screen font-tertiaryFont">
       <div className="w-full h-screen flex">
       
-      <div className="w-[23%] bg-blue-100 h-full px-7 ">
+      <div className="w-[23%] bg-blue-100 h-full px-7">
         <SideBar />
         </div>
 

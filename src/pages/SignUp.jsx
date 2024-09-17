@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 const SignUp = () => {
   const [passwordHidden, setPasswordHidden] = useState(true);
@@ -9,6 +10,44 @@ const SignUp = () => {
 
   const handleSubmit = () => {
     navigate("/userinfo")
+  }
+  async function handleSignin(e) {
+    e.preventDefault()
+
+    if(name === '' || email === '' || password === '' || confirmedPassword === '' ){
+      toast.error("please fill in all field")
+            return
+    }
+    try {
+      const userData = {
+        name, email, password, confirmedPassword
+      }
+      console.log(userData)
+      const response = await fetch('http://localhost:4000/api/v1/auth/signup',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userData)
+        }
+      )
+      const data = await response.json()
+      console.log(data)
+
+      if (!response.ok) {
+        throw new Error(data.message)
+        return
+    }
+    toast.success('Sign up successfully')
+
+
+
+    } catch (error) {
+      console.log(error)
+            toast.error(error.message)
+    }
+    
   }
 
   return (
@@ -198,14 +237,15 @@ const SignUp = () => {
                     )}
                   </span>
                 </div>
-                
+                <Link to={'/userinfo'}>
                 <button
                   type="button"
                   className="w-full py-3 bg-primary text-white rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  onClick={handleSubmit}
+                  onClick={handleSignin}
                 >
                   Sign Up
                 </button>
+                </Link>
                 <button
                   type="button"
                   className="w-full py-3 mt-2 text-appGrey rounded-lg hover:bg-secondary hover:bg-opacity-35 border border-primary"
