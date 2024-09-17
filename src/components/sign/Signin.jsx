@@ -135,9 +135,11 @@ const SignUp = () => {
               </form>
               <p className="mt-4 text-center">
                 Don't have an account?{" "}
-                <a className="text-primary hover:underline">
+                <Link to={'/signup'}>
+                <a className="text-primary hover:underline cursor-pointer">
                   Sign Up
                 </a>
+                </Link>
               </p>
             </div>
           </div>

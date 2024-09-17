@@ -7,7 +7,7 @@ const SideBar = () => {
           <header className=" pt-6">
             <Link
               to="/"
-              className=" text-black font-primaryFont text-2xl font-semibold"
+              className=" text-black font-primaryFont text-3xl font-semibold"
             >
               Finance <span className="text-primary">Paddy</span>
             </Link>
@@ -16,8 +16,8 @@ const SideBar = () => {
           <div className="text-black pt-20">
             <p className="font-semibold text-lg">Menu</p>
 
-            <ul className=" mt-4 flex flex-col space-y-4 ">
-              <li className="flex items-center gap-2 hover:bg-primary rounded-md p-1 ">
+            <ul className=" mt-4 flex flex-col space-y-4 cursor-pointer">
+              <li className="flex items-center gap-2 hover:bg-sideBarHover rounded-md p-1 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -130,7 +130,7 @@ const SideBar = () => {
               Financial Literacy</li>
             </ul>
 
-            <Link to={'/'}><p className="mt-16">LOGOUT</p></Link>
+            <Link to={'/'}><p className="mt-16 hover:bg-sideBarHover rounded-md p-1">LOGOUT</p></Link>
 
           </div>
         </div>
@@ -138,4 +138,4 @@ const SideBar = () => {
   )
 }
 
-export default SideBar
+export default SideBar
