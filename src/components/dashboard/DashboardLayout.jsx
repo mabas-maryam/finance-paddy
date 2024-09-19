@@ -4,20 +4,20 @@ import SideBar from "./SideBar";
 
 const DashboardLayout = ({ children }) => {
   return (
-    <div className="w-full min-h-screen font-tertiaryFont">
+    <div className="w-full h-screen overflow-hidden font-tertiaryFont">
       <div className="w-full h-screen flex">
       
-      <div className="w-[23%] bg-blue-100 h-full px-7">
+      <div className="w-[20%] bg-blue-100 h-full px-7">
         <SideBar />
         </div>
 
 
-        <div className="w-[77%] h-full">
+        <div className="w-[80%] h-full overflow-auto">
           <nav className="py-6 px-8 text-xl font-semibold shadow">
             <p>Welcome back User!</p>
           </nav>
 
-            <div>
+            <div className="p-6">
               {children}
             </div>
         </div>
