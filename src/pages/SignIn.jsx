@@ -118,6 +118,7 @@ const SignUp = () => {
 
                 <Link to={'/dashboard'}>
                 <button
+              
                   type="submit"
                   className="w-full py-3 mt-14 bg-primary text-white rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-blue-400"
                 >
